@@ -23,22 +23,33 @@ body{
 
 }
 
-ul li{
-  display: inline;
-  float: left;
-  margin-top: 50px;
+.nav-bar{
+  display: block;  /* Remove bullet points; allow greater control of positioning */
+  padding: 0;      /* Override defaults for lists */
+  margin: 0;       /* Override defaults for lists */
+  width: 100%;
+
 }
-.nav-link{
+
+.nav-bar li{
+  display: inline-block; /* Get all images to show in a row */
+  width: 20%;            /* Show 4 logos per row */
   text-align: center;
-  margin-right: 7px;
-  margin-left: 240px;
+
 
   font-size: 25px;
+}
+
+.nav-link{
+  margin-left: 77%;
   color: #7FFF00;
 }
-.infoBar{
-  list-style-type: disc;
+@media (max-width: 960px) and (min-width: 501px) {
+    .nav-bar li { width: 50%; } /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
+}
 
+@media (max-width: 500px) {
+    .nav-bar li { width: 100%; } /* On small screens, show one logo per row */
 }
 
 a{
