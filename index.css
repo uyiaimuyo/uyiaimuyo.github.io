@@ -39,13 +39,13 @@ body{
 }
 
 .nav-link{
-  margin-left: 76%;
+  margin-left: 77%;
   color: #7FFF00;
   line-height: 200%;
 }
 
 
-@media (max-width: 1060px) and (min-width: 501px) {
+@media (max-width: 960px) and (min-width: 501px) {
     .nav-bar li { width: 50%; } /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
 }
 
